@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Timer.StopwatchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#222"
+            android:text="Choose from To do list" />
+
+        <Spinner
+            android:id="@+id/select_list_stopwatch"
+            android:paddingHorizontal="40dp"
+            android:textSize="18sp"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stopwatch_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+        <TextView
+
+            android:id="@+id/stopwatch_running_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="55sp"
+            android:textColor="#222"/>
+
+        <TextView
+            android:text="   hour      minute     second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#222"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="bottom|center">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_play_pause2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="15dp"
+            app:srcCompat="@android:drawable/ic_media_play"
+            android:backgroundTint="@color/colorAccent"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            android:tint="#FFF" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_stop2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="15dp"
+            android:src="@drawable/ic_stop"
+            android:backgroundTint="@color/colorAccent"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            android:tint="#FFF" />
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

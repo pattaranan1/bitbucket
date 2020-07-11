@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">READAILY</string>
+    <string name="tab_text_1">To Do List</string>
+    <string name="tab_text_2">Timer</string>
+    <string name="tab_text_3">History</string>
+    <string name="tab_text_4">Summary</string>
+    <string name="tab2_text_1">Countdown</string>
+    <string name="tab2_text_2">Stopwatch</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
